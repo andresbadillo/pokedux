@@ -11,8 +11,7 @@ import 'antd/dist/reset.css';
 
 const composeAlt = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const composedEnhancers = composeAlt(applyMiddleware(thunk, logger)
-);
+const composedEnhancers = composeAlt(applyMiddleware(thunk, logger));
 
 const store = createStore(pokemonsReducer, composedEnhancers);
 
